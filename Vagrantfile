@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
     aws.secret_access_key = ENV["AWS_SECRET_ACCESS_KEY"]
     aws.keypair_name = ENV["AWS_KEYPAIR_NAME"]
 
-    aws.ami = "ami-95b4f9fc"
+    aws.ami = "ami-26cc934e"
 
     override.ssh.username = "centos"
     override.ssh.private_key_path = ENV["AWS_PRIVATE_KEY_PATH"]
