@@ -14,4 +14,8 @@ Vagrant.configure(2) do |config|
 
   config.vm.box = "dummy"
 
+  config.vm.provision "shell", inline: <<-SHELL
+    service rabbitmq-server start
+  SHELL
+
 end
