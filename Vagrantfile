@@ -10,6 +10,8 @@ Vagrant.configure(2) do |config|
 
     override.ssh.username = "ec2-user"
     override.ssh.private_key_path = ENV["AWS_PRIVATE_KEY_PATH"]
+
+    override.ssh.request_pty = true
   end
 
   config.vm.box = "dummy"
