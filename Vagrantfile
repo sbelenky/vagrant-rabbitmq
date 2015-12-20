@@ -8,7 +8,7 @@ Vagrant.configure(2) do |config|
     aws.ami = "ami-26cc934e"
     aws.instance_type = "t1.micro"
 
-    override.ssh.username = "centos"
+    override.ssh.username = "ec2-user"
     override.ssh.private_key_path = ENV["AWS_PRIVATE_KEY_PATH"]
   end
 
